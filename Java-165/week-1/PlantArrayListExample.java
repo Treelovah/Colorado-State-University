@@ -1,6 +1,6 @@
 import java.util.Scanner;
 import java.util.ArrayList;
-import java.util.StringTokenizer;
+// import java.util.StringTokenizer;
 
 public class PlantArrayListExample {
 
