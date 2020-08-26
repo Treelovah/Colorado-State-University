@@ -25,8 +25,6 @@ public class PlantArrayListExample {
         String input;
         // TODO: Declare an ArrayList called myGarden that can hold object of type plant
         ArrayList<Plant> myGarden = new ArrayList<Plant>();        
-        // TODO: Declare variables - plantName, plantCost, colorOfFlowers, isAnnual
-        String plantName, plantCost, colorOfFlowers, isAnnual;
 
         input = scnr.next();
         while (!input.equals("-1")) {
