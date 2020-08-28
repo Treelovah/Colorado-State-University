@@ -26,12 +26,12 @@ public:
         this->cost = cost;
     }
     
-    string &get_name()
+    string& get_name()
     {
         return this->name;
     }
 
-    string &get_cost()
+    string& get_cost()
     {
         return this->cost;
     }
