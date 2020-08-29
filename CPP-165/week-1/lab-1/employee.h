@@ -42,7 +42,9 @@ public:
     {
         printf("\n");
         Person::to_string();
-        printf(" They make $%d a year at %s\n", this->get_salary(), this->get_employer().c_str());
+        printf(" They make $%d a year at %s\n",
+        this->get_salary(), 
+        this->get_employer().c_str());
     }
 };
 

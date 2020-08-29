@@ -38,7 +38,9 @@ public:
 
     virtual void to_string()
     {
-        printf("%s is %d years old.", this->get_name().c_str(), this->get_age());
+        printf("%s is %d years old.",
+        this->get_name().c_str(), 
+        this->get_age());
     }    
 };
 
