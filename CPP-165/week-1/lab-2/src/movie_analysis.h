@@ -1,38 +1,28 @@
 #ifndef MOVIE_ANALYSIS_H
 #define MOVIE_ANALYSIS_H
 #include <string>
-#include <iostream>
-#include <fstream>
-#include <utility>
 #include "movie.h"
 
 using namespace std;
 
-class Movie_Analysis
+class Movie_Analysis : public Movie
 {
 private:
-    vector<Movie> movies;
+    /* data */
 public:
-    Movie_Analysis()
-    {
-        load_data();
-    }
+    // default constructor
+    Movie_Analysis();
+    
+    void load_data();
 
-    void load_data()
-    {
-        ifstream fin{ "../resources/IMDB-Movie-Data.csv" };
-        string row;
-        string delim{ "," };
-        pair<string, int> pair;
-        vector< pair <string, int> > data;
-        while (getline(fin, row))
-        {
-            pair.first = row.substr(0, row.find(delim));
-            pair.second = stoi(row.substr(1, row.find(delim)));
-            data.push_back(pair);
-        }
-    }
+    // find title in movie list
+    Movie* search(string title);
+
+    // find highest rated movie
+    Movie* get_highest_rated_movie();
+
+    // find lowest rated movie
+    Movie* get_lowest_rated_movie();
 };
-
 
 #endif

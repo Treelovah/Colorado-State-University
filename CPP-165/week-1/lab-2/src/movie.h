@@ -8,55 +8,37 @@ using namespace std;
 class Movie
 {
 private:
-    string name;    
-    vector<int> ratings;
-    int length;
+    string m_name;    
+    vector<int> ratings; 
+    int m_length;
 
 public:
-    Movie(string name, int length)
-    {
-        this->name = name;
-        this->length = length;
-    }
-
-    virtual void to_string()
-    {
-        printf("Movie Name: %s, Movie Length(in minutes): %d\n", this->name.c_str(), this->length);
-    }
+    // Default constructor
+    Movie();
     
-    void set_name(string name)
-    {
-        this->name = name;
-    }
+    // Parameter constructor
+    Movie(string name, int length);
 
-    void set_length(int length)
-    {
-        this->length = length;
-    }
+    // virtual function for overrides
+    virtual void to_string();
+    
+    // set name of movie
+    void set_name(string name);
 
-    string& get_name()
-    {
-        return this->name;
-    }
+    // add rating to movie
+    void add_rating(int rating);
 
-    int get_length()
-    {
-        return this->length;
-    }
+    // set length of movie (in minutes)
+    void set_length(int length);
 
-    void add_rating(int rating)
-    {
-        ratings.push_back(rating);
-    }
+    // get name of movie
+    string& get_name();
 
-    double get_average_rating()
-    {
-        double sum{ 0.0 };
-        int i{ 0 };
-
-        for (; i < ratings.size(); i++) sum += ratings.at(i);
-        return (sum / ratings.size());
-    }
+    // get length of movie (in minutes)
+    int get_length();
+    
+    // get average rating of movie
+    double get_average_rating();
 };
 
 
