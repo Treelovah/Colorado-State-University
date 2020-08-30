@@ -1,4 +1,4 @@
 cd into src folder
 
-run `/bin/make`
+run linux command `make` in `src` folder
 
