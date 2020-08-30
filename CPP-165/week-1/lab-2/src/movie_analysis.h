@@ -1,14 +1,15 @@
 #ifndef MOVIE_ANALYSIS_H
 #define MOVIE_ANALYSIS_H
 #include <string>
+#include <vector>
 #include "movie.h"
 
 using namespace std;
 
 class Movie_Analysis : public Movie
 {
-private:
-    /* data */
+protected:
+    vector<Movie> movies;
 public:
     // default constructor
     Movie_Analysis();

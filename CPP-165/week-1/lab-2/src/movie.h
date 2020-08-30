@@ -15,7 +15,7 @@ private:
 public:
     // Default constructor
     Movie();
-    
+
     // Parameter constructor
     Movie(string name, int length);
 
