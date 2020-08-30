@@ -42,7 +42,7 @@ void Movie::add_rating(int rating)
     ratings.push_back(rating);
 }
 
-double Movie::get_average_rating()
+float Movie::get_average_rating()
 {
     double sum{ 0.0 };
     int i{ 0 };

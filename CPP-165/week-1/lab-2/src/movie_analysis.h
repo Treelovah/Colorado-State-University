@@ -13,7 +13,8 @@ protected:
 public:
     // default constructor
     Movie_Analysis();
-    
+
+    // load data in from csv and give 100 random ratings between 0 and 6 to each movie
     void load_data();
 
     // find title in movie list

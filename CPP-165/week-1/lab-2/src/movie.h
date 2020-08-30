@@ -38,7 +38,7 @@ public:
     int get_length();
     
     // get average rating of movie
-    double get_average_rating();
+    float get_average_rating();
 };
 
 
