@@ -1,6 +1,6 @@
 #include <vector>
-#include "plant.h"
-#include "flower.h"
+#include "../headers/plant.h"
+#include "../headers/flower.h"
 
 
 int main(int argc, char const *argv[])
