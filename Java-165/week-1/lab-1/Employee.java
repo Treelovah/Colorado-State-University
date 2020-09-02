@@ -2,7 +2,7 @@ public class Employee extends Person {
     // An Employee IS A Person. It contains all of the data from Person, but a
     // little bit more.
     private long salary;
-
+    private String employer;
     /* YOUR CODE HERE 
      * It would make sense to record the company that this person
      * works for as well. Under this comment, declare a new String field called
@@ -11,7 +11,7 @@ public class Employee extends Person {
      *
      * Make your new employer parameter the LAST parameter in the constructor.
      */
-    private String employer;
+    
     public Employee(String name, int age, long salary, String employer) {
         super(name, age);
         this.salary = salary;
@@ -43,7 +43,7 @@ public class Employee extends Person {
      */
     public String toString()
     {
-        return String.format("%s They make $%d a year at %s", super.toString(), getAge(), getEmployer());
+        return String.format("%s They make $%d a year at %s", super.toString(), getSalary(), getEmployer());
     }
 
     public static void main(String[] args) {
