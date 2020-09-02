@@ -43,7 +43,11 @@ public class Employee extends Person {
      */
     public String toString()
     {
+<<<<<<< HEAD
         return String.format("%s They make $%d a year at %s", super.toString(), getSalary(), getEmployer());
+=======
+        return String.format("%s They make $%d a year at %s", super.toString(), getEmployer(), getEmployer());
+>>>>>>> 734e8b9ea73245f958f24b352d82f1d72a6865f0
     }
 
     public static void main(String[] args) {
