@@ -41,5 +41,7 @@ public class PhotoLineups {
             else permList.add(name);
         } while (!name.equals("-1"));
         allPermutations(nameList, permList);
+        // comment out scnr.close() to work in zbyooks
+        scnr.close();
     }
 }
