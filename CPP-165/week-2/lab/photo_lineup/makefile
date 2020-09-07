@@ -1,8 +1,8 @@
 main: src/main.o
-	g++ src/main.o -o main
+	g++ -std=c++11 src/main.o -o main
 
 main.o: src/main.cpp
-	g++ -c src/main.cpp
+	g++ -std=c++11 -c src/main.cpp
 
 clean:
 	rm src/*.o main
