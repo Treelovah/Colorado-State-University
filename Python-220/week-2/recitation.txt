@@ -1,0 +1,17 @@
+* The domain describes all the independent values in a function.
+* The Target describes the set of the mapped function
+* The Range describes all the dependent values in a function
+* A function is valid when each member of A points to a member of B
+* Yes, all these functions are valid if their domain is the real numbers
+* An Injective Function maps specific elements in its domain to distinct elements of the subdomain
+* No, the above 8 are not injective.
+* Yes, (5x + 1) is injective
+* No, (abs(x)) is not injective
+* The horizontal line test is how what we can apply to determine if a function is injective or not.
+* A Surgective Function is a function that maps set A to set B. For every element a in A, there is atleast one element b in B.
+* No, the above 8 functions are not all surgective
+* Yes, 5x + 1 is surgective
+* Yes, sin(x) is surgective
+* No, 2^x is not surgective
+* A Bijective Function is one that is both surgective and injective (both one-to-one & onto)
+* h(x) and j(x) are bijective functions
