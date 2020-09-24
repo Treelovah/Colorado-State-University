@@ -4,7 +4,7 @@ package kss;
  * BlackBox Testing
  *
  */
-public class App
+public class Bbox
 {
     public static int sin(int x, boolean square, boolean increment, boolean negate)
     {
