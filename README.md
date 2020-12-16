@@ -1,3 +1,5 @@
 # Colorado-State-University
-Programs &amp; content made during my time at Colorado-State-University.
-## Filled with Bash, Python, C, CPP and Java :)
+
+Programming Assignments in Java along with some rewrites I did in other languages during my time at Colorado-State-University.
+
+## Filled with Python, C, CPP and Java.
